@@ -13,7 +13,7 @@ import { useNavigate } from "react-router-dom";
 
 const AddBook = () => {
   const history = useNavigate();
-  axios.defaults.withCredentials = true;
+  //axios.defaults.withCredentials = true;
   const [inputs, setInputs] = useState({
     name: "",
     description: "",
@@ -40,7 +40,9 @@ const AddBook = () => {
         price: Number(inputs.price),
         image: String(inputs.image),
         available: Boolean(checked),
-      })
+      },{
+  withCredentials: true, // Ensure credentials (cookies) are included
+})
       .then((res) => console.log(res.data));
   };
 
