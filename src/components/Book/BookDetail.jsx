@@ -18,7 +18,7 @@ const BookDetail = () => {
   useEffect(() => {
     const fetchHandler = async () => {
       await axios
-        .get(`bookstore-backend-blush-gamma.vercel.app/books/${id}`)
+        .get(`https://bookstore-backend-cyan.vercel.app/books/${id}`)
         .then((res) => res.data)
         .then((data) => setInputs(data.book));
     };
@@ -27,7 +27,7 @@ const BookDetail = () => {
 
   const sendRequest = async () => {
     await axios
-      .put(`bookstore-backend-blush-gamma.vercel.app/books/${id}`, {
+      .put(`https://bookstore-backend-cyan.vercel.app/books/${id}`, {
         name: String(inputs.name),
         author: String(inputs.author),
         description: String(inputs.description),
