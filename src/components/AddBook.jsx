@@ -13,6 +13,7 @@ import { useNavigate } from "react-router-dom";
 
 const AddBook = () => {
   const history = useNavigate();
+  axios.defaults.withCredentials = true;
   const [inputs, setInputs] = useState({
     name: "",
     description: "",
