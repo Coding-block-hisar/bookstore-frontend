@@ -3,7 +3,7 @@ import "./Book.css";
 import axios from "axios";
 import Book from "./Book";
 
-const URL = "http://localhost:5000/books";
+const URL = "bookstore-backend-blush-gamma.vercel.app/books";
 
 const fetchHandler = async () => {
   return await axios.get(URL).then((res) => res.data);
