@@ -40,7 +40,7 @@ const AddBook = () => {
         price: Number(inputs.price),
         image: String(inputs.image),
         available: Boolean(checked),
-      }
+      })
       .then((res) => console.log(res.data));
   };
 
