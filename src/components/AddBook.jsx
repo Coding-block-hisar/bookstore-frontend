@@ -40,9 +40,7 @@ const AddBook = () => {
         price: Number(inputs.price),
         image: String(inputs.image),
         available: Boolean(checked),
-      },{
-  withCredentials: true, // Ensure credentials (cookies) are included
-})
+      }
       .then((res) => console.log(res.data));
   };
 
