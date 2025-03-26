@@ -33,7 +33,7 @@ const AddBook = () => {
 
   const sendRequest = async () => {
     await axios
-      .post("https://bookstore-backend-cyan.vercel.app/books", {
+      .post("https://bookstore-backend-self-eight.vercel.app/books", {
         name: String(inputs.name),
         author: String(inputs.author),
         description: String(inputs.description),
