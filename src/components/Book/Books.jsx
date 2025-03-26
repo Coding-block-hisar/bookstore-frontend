@@ -3,7 +3,7 @@ import "./Book.css";
 import axios from "axios";
 import Book from "./Book";
 
-const URL = "https://bookstore-backend-cyan.vercel.app/books";
+const URL = "https://bookstore-backend-self-eight.vercel.app/books";
 
 const fetchHandler = async () => {
   axios.defaults.withCredentials = true;
